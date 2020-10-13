@@ -1,0 +1,10 @@
+#!/bin/bash
+/usr/local/bin/sendtelegram -c /monit/default -m "
+Host:     $MONIT_HOST
+Service: $MONIT_SERVICE
+Status:   🚸
+Event:   $MONIT_EVENT
+Description: $MONIT_DESCRIPTION
+Times:   $MONIT_DATE
+"
+

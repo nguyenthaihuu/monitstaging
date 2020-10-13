@@ -1,0 +1,14 @@
+[Unit]
+Description=Pro-active monitoring utility for unix systems
+
+[Service]
+Type=simple
+KillMode=process
+ExecStart=/usr/bin/monit -I
+ExecStop=/usr/bin/monit quit
+ExecReload=/usr/bin/monit reload
+Restart = on-abnormal
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target

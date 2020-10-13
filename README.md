@@ -1,2 +1,2 @@
-# monitstaging
-Monit Staging
+# monitcentos7
+Monit Centos7
